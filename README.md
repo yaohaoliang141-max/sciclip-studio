@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SciClip Studio (科影工坊)
 
-## Getting Started
+SciClip Studio is an intelligent AI-agent workspace designed to automate the retrieval of high-quality B-roll footage for science popularization videos. By analyzing text scripts, it automatically extracts visual keywords and fetches matching, royalty-free video materials.
 
-First, run the development server:
+## ✨ Core Features
 
+* **AI Script Analysis:** Leverages Google Gemini API to parse video scripts, segment logic, and extract accurate visual search queries.
+* **Automated B-Roll Search:** Integrates seamlessly with the Pexels API to source high-resolution, royalty-free video clips.
+* **Visual Preview & Selection:** Provides a clean interface to preview multiple footage candidates per script segment, allowing for easy manual overrides.
+* **Batch Download:** One-click functionality to download all selected video materials locally for immediate editing.
+
+## 🛠 Tech Stack
+
+* **Framework:** Next.js 14 (App Router)
+* **Language:** TypeScript
+* **Styling:** Vanilla CSS (Dark theme with glassmorphism design)
+* **AI Engine:** Google Gemini API
+* **Video Source:** Pexels API
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [https://github.com/yaohaoliang141-max/sciclip-studio-.git](https://github.com/yaohaoliang141-max/sciclip-studio-.git)
+cd sciclip-studio-
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Environment Variables
+Create a .env.local file in the root directory and add your API keys. (Do not commit this file to version control).
+```env
+# Google Gemini API Key
+GEMINI_API_KEY=your_gemini_api_key_here
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Pexels API Key
+PEXELS_API_KEY=your_pexels_api_key_here
+```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 4. Run the development server
+```bash
+npm run dev
+```
+Open http://localhost:3000 with your browser to see the result.
