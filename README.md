@@ -21,8 +21,8 @@ SciClip Studio is an intelligent AI-agent workspace designed to automate the ret
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/yaohaoliang141-max/sciclip-studio-.git](https://github.com/yaohaoliang141-max/sciclip-studio-.git)
-cd sciclip-studio-
+git clone https://github.com/yaohaoliang141-max/sciclip-studio.git
+cd sciclip-studio
 ```
 
 ### 2. Install dependencies
